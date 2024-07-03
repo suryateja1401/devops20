@@ -1,0 +1,28 @@
+july 1st
+=============
+GIT:
+  earlier day people just create fles and save that as backup
+  note pads and excelsheet
+  The fil which is in laptop i can not be accesed by the team
+  If someone done any modification we cant figure out who changed that 
+Linux Tarvalds:
+
+Git:
+  --> Version control system
+  -->Multiple people can share the files
+  ---> tracking the changes in files like who has done th changes
+ 
+ 3 types of VCS:
+ -----------------
+ 1.Local version control system
+ 2.centralised VCS: create a sever and share the data via that server
+                  But if sever is lost or down we will loose the data
+3.Distributed VCS: Every one can work parallely on that files
+                   
+
+-->>github
+    bitbucket
+    gitlab
+    Aws Codecommit
+    Azure Repo
+----> Common tool used to interract with DVCS is Git.	

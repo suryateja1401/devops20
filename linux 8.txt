@@ -1,0 +1,51 @@
+jube26th
+-------------
+
+To check whether software/command  is available or not --- which netstat
+To check which port no.is using by whom ---- sudo netstat -anlp
+To stop/kill the process --- sudo kill <pid>
+To check the running process --- ps -ef
+To check whether url is working or not  --- curl http://<path> or curl -v https://www.facebook.com
+To download required softwares ---- curl <requires software path> -o sample.war(folder)
+                                     or--- wget <requires software path>  sample.war(folder)
+									   wget --- non-interactive network downloader
+To check network connectivity b/w servers --- ping <public ip>
+To check any specific process running in any specific port in remote host --- telnet <public ip> <port no.>	
+To transfer/upload/download files from windows to linux --- winscp or filejila	
+To transfer/upload/download files from windows to linux by using gitbash: 	
+       upload : scp -i 'pemkey' <filename> remotserverusername@remoteserverpublcip:<u[loadpath>   
+	        eg: scp -i 'pemkey'	sample.war ec2-user@<public ip>:/tmp
+	   download: scp -i 'pemkey' remotserverusername@remoteserverpublcip:<path/<filename> .<downloadpath>   
+	         eg: scp -i 'pemkey' ec2-user@<public ip>:/home/ec2-user/<filename> .
+			 
+To check flowlogs--- tail -f 
+To check next 5 lines if the keyword matches : grep -A<no.of lines> <keyword> <filename> 
+                                          eg : grep -A4 11230 test.log
+To check before 5 lines if the keyword matches : grep -B<no.of lines> <keyword> <filename>
+                                            eg : grep -B4 11230 test.log
+To find which dns is resolves to which ip : nslookup								   
+
+
+diff bt jar vs war vs ear
+---------------------------
+===>all these three are related to java package file
+  jar ---> java archive files
+           only java files
+  war --> web archive file
+      --> both html/css/js = java files
+  ear --> enterpise archive file
+      --> java EJB file  
+			
+how to run java files = java -jar <filename>
+
+
+
+june 28th
+--------
+how to zip  files or folders in linux
+   tar --> tape archive or tar ball syntax : tar -cf <filename.tar> <folder which you want to tar>
+                                             tar -czf <filename.tar.gz> <folder which you want to zip>
+									untar : tar -tvf <filename 
+   zip --> archive the files  syntax: zip <nameofthezip.zip> <file or folder which you want to zip>
+                     unzip:   syntax: unzip <zipfile yoou want to unzip>  -d <desination folder>
+					 

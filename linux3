@@ -1,0 +1,27 @@
+19th june
+linux commands
+-------------
+commnads to list directories=dir 
+1.clear
+2.pwd
+3.ls = list the directories and files
+ ls-l= long list blue colour = directories
+                red colour  = files
+ ls -al = long list along with hidden files 
+4.sudo su - = switch user
+5.cd = change directory
+6.touch to create empty file
+7.cat = to see the content
+8.mkdir = make directory
+   if we create a directory in linux we will get 2 directories inside whicj are hidden like . and ..
+                                                                                             . =current directory
+																							 .. = parent directory
+9.rm = to remove file 
+10.cp = copy command
+
+
+
+
+ 
+ 
+

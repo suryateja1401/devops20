@@ -1,0 +1,84 @@
+20th june
+========
+Filetypes:
+ .txt=text file
+ .c = c language
+ .java = java language
+ .py = python language
+ .html = html language
+ .css = casacading style sheet
+ .dll = dotnet
+ .php =php language
+ .js = java scrirt
+ .doc = word document
+ .pdf = pdf document
+ .json =java object notation
+ .properties =property files
+ .sh = shell script
+ .xml = xtensible mark langugae
+ .pl = perl script
+ .zip =zip files
+ .tar = tar balls
+ .jar = java archive file
+ .war = war archive file
+ .ear = enterprised archive  file
+ .sql = sql language
+ .exe = executable file
+ .msi = microsoft instabale
+
+task manager for windows adminstration
+In linux to know how many process are running? = ps -ef = process list 
+to know total no of process count = ps-ef |wc -l number of processes
+                                           wc =word count
+										   l = lines
+pid = process identifier
+ppid = parent process identifier										   
+										   
+										   
+user information:
+---------
+1.cat /etc/passwd = store all the users rekated information
+ user add 
+ user del can only be done with root user
+ sudo user add "username" = with out root user you can create user
+ useradd command 
+          1.it will add an entry into /etc/passwd
+          2. i will create default home directory to the user	
+linux system performance(cpu utilisation) = Top
+ps -ef|grep 
+kill "pid" => kill commands can only be done using root user
+
+stopping process
+ --> graceful termination = soft close ,we are allowing that process to stop on its own ,i will complete al the child process then stop the present process
+ --> forceful termination = abnormal termination 
+
+pravnath:x:  1001  :   1001    :: /home/pravnath:/bin/sh
+            usedid    groupid 
+
+username and group will be same  
+
+    usermod -a -G <groupname> <username>
+ex: usermod -a -G   devops      user20
+
+sudo su - <username>
+
+id <username>
+
+If any user is part of multiple groups especially adm,wheel,systemd, then that user is called privilised user.
+
+file permissions
+------
+1.user permissions
+2.group permissions
+3.other permissions
+ read    -4 -r
+ write   -2 -w
+ execute -1 -x
+ default permissions for file = 644
+ default permissions for directories = 755
+ 
+ chmod 
+ chown
+ chgrp
+ chown <username>:<groupname> filename
+ chown <username>:<groupname> directoryname -R

@@ -1,0 +1,52 @@
+june 21st
+------------------
+
+hutdown --- stop the server
+shutdown -R --- reboot the server	
+
+
+Scenario: You have linux server and in that server you have deployed your website. it has exposed to internet and anyone can access it. you have got the complaint
+that website is not working fine, some time it is not accessible. Steps needs to be followed to troubleshoot it.
+
+Sol: 1. Check whether application is running or not
+ 
+2.Reboot --- automatic start and stop of the system
+uptime --- used to see the server uptime
+
+2.CPU utilization checking:
+--------------------------
+top
+3.Memory checking :
+----------------------
+     free -g
+	 free -m
+	 
+Drop cache memory:
+------------------
+echo 3 > /proc/sys/vm/drop_caches 	  
+4. check disk space:
+ df -kh
+ 
+ Scenario: Your lead given one server and asked to check the os details and kernel details.
+ 
+ 1.os details
+   cat /etc/os-release
+   cat /etc/system-release
+   cat amazon-linux-release
+   
+ 2. kernel details:
+ ===================
+    uname -a 
+ 3. 3.Memory checking :
+----------------------
+     free -g
+	 free -m
+     cat /proc/meminfo	 
+4. disk configuration:
+===================
+ df -kh
+
+2.CPU utilization checking:
+--------------------------
+ Top
+ cat /proc/cpuinfo

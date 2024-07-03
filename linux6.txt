@@ -1,0 +1,88 @@
+june 24th
+=======
+
+powershell is the scriptig for windows
+winget search htttpd
+os release version = cat /etc/os-release
+systemctl status httpd
+which command
+systemctl=systemcontrol command
+curl = to check the access about url
+curl http://localhost:80
+/var/www/html
+/etc/httpd/httpd.conf
+
+
+
+
+Apache webserver (httpd)
+-----------------
+
+default port : 80
+sudo yum install httpd -y
+
+sudo systemctl status httpd
+sudo systemctl start httpd
+sudo systemctl stop httpd
+sudo systemctl restart httpd
+sudo systemctl enable httpd
+
+alternative method:
+--------------------
+sudo service status httpd
+sudo service start httpd
+sudo service stop httpd
+sudo service restart httpd
+sudo service enable httpd
+
+
+
+default local for html pages(home): /var/www/html
+default configuration file: /etc/httpd/conf/httpd.conf
+
+Note: when you add any static content we no need to restart the apache server
+
+----port 22 is reserved for ssh connectivity
+----Always single port allows to single service
+
+Customiztion of port:
+----------------------
+
+we can customize port no. ---- cd /etc/httpd/conf
+                               vi httpd.conf (we can change the listen port as per the requirement)
+
+ubuntu weserver:
+--------------------
+name of apache webserver is apache2
+configuration file:  /etc/apache2/apache2.conf
+static content path : /var/www/html
+
+NGINX
+------
+
+sudo yum install nginx
+
+sudo apt install nginx
+
+default port no. : 80
+configuration file: /etc/nginx/ngin.conf
+html files path: /usr/share/nginx/html
+
+os log files checking:
+------------------
+ubuntu: /var/log/syslog
+centos/rhel: /var/log/messages
+amazon-linux:
+var/log/application ---- eg: /var/log/nginx
+                             access.log --- less access.log---will give less logs
+							 error.log
+							 
+							 head---head error_log or head -5 error_log
+							 tail---tail error_log or tail -5 error_log
+							 
+to check no. of lines ---- wc -l error_log
+
+
+
+
+							   
